@@ -61,6 +61,14 @@ Transit:
 
 ---
 
+## Documentation
+
+All documentation lives in [`1—Documentation/`](1—Documentation/README.md):
+business context, IP plan, VLAN/VTP plan, STP/HSRP design, security ACLs,
+NAT and internet edge, the validation checklist and the change log.
+
+---
+
 ## Policy Highlights
 - Guest VLAN is **internet-only** (blocked from RFC1918 internal ranges)
 - Finance VLAN is **restricted** (blocked from Engineering VLAN)
@@ -71,7 +79,7 @@ Transit:
 ## How to Use
 - Load configs from `configs/` into Packet Tracer / GNS3 / EVE-NG.
 - Open diagram: `diagrams/ramp-enterprise-network.drawio`
-- Validate using: `docs/validation-checklist.md`
+- Validate using: [`1—Documentation/validation-checklist.md`](1—Documentation/validation-checklist.md)
 
 ---
 

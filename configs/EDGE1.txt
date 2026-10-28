@@ -21,11 +21,21 @@ interface GigabitEthernet0/2
 
 ip route 0.0.0.0 0.0.0.0 203.0.113.1
 
+! Return routes prefer the HSRP-active distribution switch for each VLAN.
 ip route 10.10.10.0 255.255.255.0 10.255.1.1
 ip route 10.10.20.0 255.255.255.0 10.255.2.1
 ip route 10.10.30.0 255.255.255.0 10.255.1.1
 ip route 10.10.40.0 255.255.255.0 10.255.2.1
 ip route 10.10.99.0 255.255.255.0 10.255.1.1
+!
+! Floating statics (AD 10) via the other distribution switch. Without them,
+! losing DIST1 or its uplink failed the gateway over (HSRP) but left return
+! traffic for that switch's VLANs routed into a dead link.
+ip route 10.10.10.0 255.255.255.0 10.255.2.1 10
+ip route 10.10.20.0 255.255.255.0 10.255.1.1 10
+ip route 10.10.30.0 255.255.255.0 10.255.2.1 10
+ip route 10.10.40.0 255.255.255.0 10.255.1.1 10
+ip route 10.10.99.0 255.255.255.0 10.255.2.1 10
 
 ip access-list standard NAT_INSIDE
  permit 10.10.0.0 0.0.255.255
