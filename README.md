@@ -61,6 +61,14 @@ Transit:
 
 ---
 
+## Documentation
+
+All documentation lives in [`1—Documentation/`](1—Documentation/README.md):
+business context, IP plan, VLAN/VTP plan, STP/HSRP design, security ACLs,
+NAT and internet edge, the validation checklist and the change log.
+
+---
+
 ## Policy Highlights
 - Guest VLAN is **internet-only** (blocked from RFC1918 internal ranges)
 - Finance VLAN is **restricted** (blocked from Engineering VLAN)
@@ -71,7 +79,7 @@ Transit:
 ## How to Use
 - Load configs from `configs/` into Packet Tracer / GNS3 / EVE-NG.
 - Open diagram: `diagrams/ramp-enterprise-network.drawio`
-- Validate using: `docs/validation-checklist.md`
+- Validate using: [`1—Documentation/validation-checklist.md`](1—Documentation/validation-checklist.md)
 
 ---
 
@@ -87,3 +95,26 @@ Transit:
 
 ---
 
+<!-- project-metrics:start -->
+## Project Metrics
+
+[![Stars](https://img.shields.io/github/stars/syedjafri06193/Cisco-Enterprise-Network-Arch-proj?style=flat-square)](https://github.com/syedjafri06193/Cisco-Enterprise-Network-Arch-proj/stargazers) [![Forks](https://img.shields.io/github/forks/syedjafri06193/Cisco-Enterprise-Network-Arch-proj?style=flat-square)](https://github.com/syedjafri06193/Cisco-Enterprise-Network-Arch-proj/forks) [![Open issues](https://img.shields.io/github/issues/syedjafri06193/Cisco-Enterprise-Network-Arch-proj?style=flat-square)](https://github.com/syedjafri06193/Cisco-Enterprise-Network-Arch-proj/issues) [![Last commit](https://img.shields.io/github/last-commit/syedjafri06193/Cisco-Enterprise-Network-Arch-proj/improvements?style=flat-square)](https://github.com/syedjafri06193/Cisco-Enterprise-Network-Arch-proj/commits/improvements) [![Commits](https://img.shields.io/github/commit-activity/t/syedjafri06193/Cisco-Enterprise-Network-Arch-proj?style=flat-square)](https://github.com/syedjafri06193/Cisco-Enterprise-Network-Arch-proj/commits/improvements) [![Top language](https://img.shields.io/github/languages/top/syedjafri06193/Cisco-Enterprise-Network-Arch-proj?style=flat-square)](https://github.com/syedjafri06193/Cisco-Enterprise-Network-Arch-proj) [![Repo size](https://img.shields.io/github/repo-size/syedjafri06193/Cisco-Enterprise-Network-Arch-proj?style=flat-square)](https://github.com/syedjafri06193/Cisco-Enterprise-Network-Arch-proj)
+
+### Code
+
+| Metric | Value |
+|---|---|
+| Lines of code | 308 |
+| Source files | 5 |
+| Tracked files | 17 |
+| Documentation | 10 Markdown files (1,651 words), 1 PDF |
+| Commits | 21 |
+| Contributors | 1 |
+| Active | 2026-01-27 → 2026-10-28 |
+
+| Language | Lines | Share |
+|---|---:|---:|
+| Cisco IOS config | 308 | 100.0% |
+
+<sub>Code stats as of 2026-10-28, counted with pygount (comments and blank lines excluded). Badges update live.</sub>
+<!-- project-metrics:end -->
